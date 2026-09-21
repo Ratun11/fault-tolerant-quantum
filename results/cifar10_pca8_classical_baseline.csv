@@ -1,0 +1,13 @@
+metric,value
+train_accuracy,0.3084
+test_accuracy,0.3067
+airplane_recall,0.461
+automobile_recall,0.316
+bird_recall,0.138
+cat_recall,0.073
+deer_recall,0.169
+dog_recall,0.374
+frog_recall,0.441
+horse_recall,0.223
+ship_recall,0.461
+truck_recall,0.411

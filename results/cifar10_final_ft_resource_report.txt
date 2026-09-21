@@ -1,0 +1,31 @@
+FINAL END-TO-END FT CIFAR-10 RESOURCE REPORT
+==========================================
+
+Selected decoder: previous_flagged
+Logical qubits: 8
+[[5,1,3]] physical data qubits: 40
+Blockwise syndrome/flag ancilla estimate: 16
+Conceptual parallel qubit estimate: 56
+
+Data RY operations: 32
+Trainable RY operations: 32
+Trainable RZ operations: 32
+Logical CNOT operations: 32
+Uniform logical locations: 160
+Rotation gadget cycles: 2
+CNOT gadget cycles: 2
+FT-equivalent protected cycles: 320
+
+Ideal classifier accuracy: 0.914300
+Target accuracy: 0.770000
+Max tested unprotected p meeting target: 0.005
+Max tested FinalFT p meeting target: None
+Approximate FinalFT/unprotected break-even p: None
+
+SCIENTIFIC LIMITATIONS
+----------------------
+1. The 8-qubit statevector represents logical qubits; a 40+ qubit encoded statevector is not explicitly simulated.
+2. The selected decoder output is available only as total p_L, so the residual logical channel is symmetrized as X=Y=Z=p_L/3.
+3. Arbitrary logical RY/RZ operations are represented by FT-overhead cycles rather than explicit compiled Clifford+T/injection circuits.
+4. Logical CNOT participant noise is modeled independently; correlated two-logical-block errors from an explicit pieceable CNOT gadget are not yet simulated.
+5. Qubit estimates describe blockwise EC and do not claim an exact hardware ancilla count for the final Rigetti compilation.

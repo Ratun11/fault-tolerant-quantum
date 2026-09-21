@@ -1,0 +1,18 @@
+FAULT-TOLERANT LOGICAL-GATE RESOURCE SUMMARY
+===========================================
+Logical qubits: 8
+[[5,1,3]] physical data qubits: 40
+Parallel syndrome/flag ancilla estimate: 16
+Conceptual parallel qubit estimate: 56
+
+Data RY operations: 32
+Trainable RY operations: 32
+Trainable RZ operations: 32
+Logical CNOT operations: 32
+
+Rotation gadget EC-equivalent cycles: 2
+CNOT gadget EC-equivalent cycles: 2
+Uniform block-channel applications: 160
+Gate-aware block-channel applications: 320
+
+IMPORTANT: these are modeling/resource proxies, not exact compiled hardware gate counts.
